@@ -1,9 +1,10 @@
 import React from 'react';
-import Dialogs from './components/Dialogs/Dialogs';
+import DialogsScreen from './components/Dialogs/DialogsScreen';
+import Correspondence from './components/Сorrespondence/Correspondence';
 
 const App = (props) => {
   return (
-    <Dialogs {...props}/>
+    <Correspondence {...props}/>
   );
 };
 

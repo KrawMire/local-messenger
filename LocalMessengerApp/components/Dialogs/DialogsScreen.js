@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {ScrollView, StyleSheet, View} from 'react-native';
-import Message from './Message';
+import Dialog from './Dialog';
 import SearchBox from './SearchBox';
 
 function sendRequest(api, successCallback, failCallback) {
@@ -22,10 +22,11 @@ function sendRequest(api, successCallback, failCallback) {
     .catch((error) => failCallback(error));
 }
 
-const Dialogs = (props) => {
-  let url = props.apiUrl;
+const DialogsScreen = (props) => {
   const [inputText, setInputText] = useState('');
   const [messages, setMessages] = useState([]);
+
+  let url = props.apiUrl;
 
   const successCallBack = (data) => {
     if (!data.error) {
@@ -58,7 +59,7 @@ const Dialogs = (props) => {
       <SearchBox handleInput={(text) => setInputText(text)} />
       <ScrollView>
         {messages.map(message => (
-          <Message header={message.header}
+          <Dialog header={message.header}
                    message={message.message}
                    key={message.id}
           />
@@ -74,4 +75,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Dialogs;
+export default DialogsScreen;

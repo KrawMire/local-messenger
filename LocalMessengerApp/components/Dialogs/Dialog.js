@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View, StyleSheet, TouchableNativeFeedback} from 'react-native';
 
-const Message = (props) => {
+const Dialog = (props) => {
     return (
       <TouchableNativeFeedback>
           <View style={styles.message}>
@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Message;
+export default Dialog;
