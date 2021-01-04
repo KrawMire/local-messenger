@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2R4ByH5XAo4wWqJBpVapFchZe50uyLIo3oJGZ/xcNyisssH5U6raPjRlY5j6AAyKxzIDVQKUUbLahGEJ2wq/xg==",
+  "dgSpecHash": "DLCyl3Wd+KMPVQVGK4Tei3NOnZcV04+XEiZOcaWHbAKr4I+y23KCofqauR/H0Ek1QfZj8/u2S5fwzEYOiyn93g==",
   "success": true,
-  "projectFilePath": "/home/krawmire/Git-repos/local-messenger/LocalMessenger.Server/LocalMessenger.Server/LocalMessenger.Server.csproj",
+  "projectFilePath": "D:\\GIT_REPOS\\local-messenger\\LocalMessenger.Server\\LocalMessenger.Server\\LocalMessenger.Server.csproj",
   "expectedPackageFiles": [
-    "/home/krawmire/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
+    "C:\\Users\\Gavor\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }
