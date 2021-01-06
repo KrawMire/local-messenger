@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -36,7 +37,7 @@ namespace LocalMessenger.Server.Controllers
                 new Message(16, "iamjakehill", "qq123ac"),
                 new Message(17, "Olalala", "qe3221dcveqer"),
             };
-
+            Thread.Sleep(500);
             return Json(data);
         }
     }

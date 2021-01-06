@@ -3,7 +3,7 @@ import {Text, View, StyleSheet, TouchableNativeFeedback} from 'react-native';
 
 const Dialog = (props) => {
     return (
-      <TouchableNativeFeedback>
+      <TouchableNativeFeedback onPress={() => props.navigateScreen()}>
           <View style={styles.message}>
               <Text style={styles.senderheader}>{props.header}</Text>
               <Text style={styles.messagetext}>{props.message}</Text>
@@ -14,12 +14,15 @@ const Dialog = (props) => {
 
 const styles = StyleSheet.create({
     message: {
+        borderRadius: 20,
+        borderWidth: 1,
         borderColor: '#DEDEDE',
-        borderTopWidth: 1,
         height: 85,
-        width: '100%',
+        width: '95%',
         justifyContent: 'center',
-        paddingHorizontal: 30
+        paddingHorizontal: 30,
+        marginVertical: 4,
+        alignSelf: 'center',
     },
     senderheader: {
         fontSize: 18,

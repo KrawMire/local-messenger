@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
   theirmessage: {
     backgroundColor: '#373539',
     width: '51%',
-    marginTop: 20,
+    marginTop: 10,
+    marginBottom: 10,
     marginLeft: 8,
     padding: 20,
     borderBottomEndRadius: 35,
@@ -33,10 +34,11 @@ const styles = StyleSheet.create({
     color: '#dddddd',
   },
   ownmessage: {
-    backgroundColor: '#d6d6d6',
+    backgroundColor: '#b7b7b7',
     width: '51%',
     alignSelf: 'flex-end',
-    marginTop: 20,
+    marginTop: 10,
+    marginBottom: 10,
     padding: 20,
     marginRight: 8,
     borderBottomStartRadius: 35,
